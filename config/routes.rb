@@ -1,4 +1,6 @@
 NiceCm::Application.routes.draw do
+  resources :cms
+
   root :to => 'cms#index'
   get "cms/index"
   get "cms/show"

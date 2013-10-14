@@ -1,2 +1,12 @@
 %h1 Cms#new
-%p Find me in app/views/cms/new.html.haml
+.new
+  = form_for(@cm) do |f|
+    .field
+      .name
+        = f.label :name
+        = f.text_field :name
+      .code
+        = f.label :code
+        = f.text_field :code
+    .action
+      = f.submit
