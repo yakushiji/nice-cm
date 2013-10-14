@@ -1,2 +1,3 @@
 %h1 Cms#index
-%p Find me in app/views/cms/index.html.haml
+- @cms.each do |cm|
+  = cm.name
